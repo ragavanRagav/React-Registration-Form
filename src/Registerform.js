@@ -9,7 +9,7 @@ class  RegisterForm extends Component{
                     <label>Name :</label><br></br>
                     <input onBlur={this.props.handelChange} title="Your Name" type="text" name="name" required placeholder="Your Name" autoComplete="on" /><br></br>
                     <label>Age :</label><br></br>
-                    <input onBlur={this.props.handelChange} title="Your Age" type="text" name="age" required placeholder="Your Age" autoComplete="on" /><br></br>
+                    <input onBlur={this.props.handelChange} title="Your Age" type="number" min={14} max={100} name="age" required placeholder="Your Age" autoComplete="on" /><br></br>
                     <label>email :</label><br></br>
                     <input onBlur={this.props.handelChange} title="Your Email" type="email" name="email"required placeholder="Email Address" /><br></br>
                     <label>Set Password :</label><br></br>
