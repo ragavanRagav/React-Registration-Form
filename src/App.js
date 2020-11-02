@@ -11,9 +11,9 @@ class App extends Component{
   this.handleSubmit = this.handleSubmit.bind(this);
   this.authendication = this.authendication.bind(this);
 }
-handelChange=(event)=>{
+handelChange = e => {
   const val = event.target.name;
-      this.setState({[val] : event.target.value});
+      this.setState({[val] : e.target.value});
 }
 handleSubmit=(event)=>{
   event.preventDefault();
